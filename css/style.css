@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --blue: rgb(79, 125, 243);
+  --aleBlue: rgb(194, 211, 255);
+  --lightRed: rgb(255, 82, 99);
+  --gray: rgb(150, 150, 150);
+  --veryDarkBlue: rgb(21, 31, 41);
+}
+
+body{
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+figure{
+  margin: 0;
+}
+
+.logo{
+  margin: 40px auto 50px auto;
+  display: block;
+  max-width: 100px;
+}
+
+.container{
+  margin: auto;
+  max-width: 1100px;
+}
+
+.hero{
+  margin: auto;
+}
+
+.hero .titulo{
+  text-align: center;
+  color: var(--gray);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.hero .titulo strong{
+  color: var(--veryDarkBlue);
+}
+
+.hero p{
+  text-align: center;
+}
+
+.form{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form .email{
+  border: 1px solid var(--aleBlue);
+  outline-style: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+.form .send{
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  outline-style: none;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px var(--aleBlue);
+}
+
+.form label .send:active{
+  transform: scale(1.05);
+}
+
+.wrapper figure{
+  margin: 80px 0;
+  display: flex;
+}
+
+.wrapper figure img{
+  max-width: 650px;
+  margin: auto;
+}
+
+footer{
+  max-width: 600px;
+  margin: auto;
+}
+
+footer .social{
+  display: flex;
+  margin: auto;
+}
+
+footer .social ul{
+  list-style: none;
+  display: flex;
+  margin: auto;
+}
+
+footer .social ul li{
+  margin: 0 15px 0 20px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0; 
+}
+
+footer .social ul li a{
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+
+
+.footerCopy{
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 650px){
+  .wrapper figure img{
+    max-width: 500px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form .email{
+    margin-bottom: 25px;
+  }
+
+  .form .send{
+    width: 300px;
+  }
+
+  .wrapper figure img{
+    max-width: 400px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form .email{
+    margin-bottom: 25px;
+  }
+
+  .form .send{
+    width: 300px;
+  }
+
+  .wrapper figure img{
+    max-width: 300px;
+    display: flex;
+  }
+}
